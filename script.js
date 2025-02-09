@@ -7,7 +7,7 @@ let generatebtn = document.querySelector(".generatebtn");
 
 function generateQR(){
     if(qrText.value != ''){
-
+        imgBox.innerHTML = "Creating the QR Code...";
         qrImg.src = " https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + qrText.value ;
 
     imgBox.classList.add("show-img");
